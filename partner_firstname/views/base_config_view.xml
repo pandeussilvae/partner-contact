@@ -6,7 +6,10 @@
         <field name="arch" type="xml">
             <xpath expr="//div[@id='companies']" position='after'>
                 <h2>Partner Names Order</h2>
-                <div class="row mt16 o_settings_container" name="partner_names_order_setting_container">
+                <div
+                    class="row mt16 o_settings_container"
+                    name="partner_names_order_setting_container"
+                >
                     <div class="col-xs-12 col-md-6 o_setting_box">
                         <div class="o_setting_left_pane">
                             <field name="partner_names_order" />
@@ -16,8 +19,14 @@
                             <div class="text-muted">
                                 Configure how partner names are displayed
                             </div>
-                            <div class="content-group mt16" invisible="not partner_names_order_changed">
-                                <field name="partner_names_order_changed" invisible="1" />
+                            <div
+                                class="content-group mt16"
+                                invisible="not partner_names_order_changed"
+                            >
+                                <field
+                                    name="partner_names_order_changed"
+                                    invisible="1"
+                                />
                                 <button
                                     name="action_recalculate_partners_name"
                                     string="Recalculate names"
